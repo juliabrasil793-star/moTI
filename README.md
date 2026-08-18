@@ -1,6 +1,6 @@
-# InfraTrack
+# MoTI 
 
-Sistema web para gestão de equipamentos e manutenção da infraestrutura de TI.
+Sistema web para monitoramento de equipamentos e manutenção da infraestrutura de TI.
 
 ## Sobre o projeto
 
