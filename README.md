@@ -1,27 +1,32 @@
 # InfraTrack
-InfraTrack — Sistema de Gestão de Equipamentos e Manutenção de TI
+
+Sistema web para gestão de equipamentos e manutenção da infraestrutura de TI.
 
 ## Sobre o projeto
 
-O InfraTrack tem como objetivo auxiliar o setor de Tecnologia da Informação
-no controle dos equipamentos da instituição, permitindo acompanhar sua
-situação, problemas, manutenções e histórico.
+O InfraTrack é uma aplicação web desenvolvida para auxiliar o setor de
+Tecnologia da Informação no controle e acompanhamento dos equipamentos
+da instituição.
+
+A plataforma permitirá centralizar informações sobre equipamentos,
+problemas, manutenções e histórico de ocorrências.
 
 ## Problema
 
-O acompanhamento de equipamentos e manutenções pode se tornar difícil
-quando as informações ficam espalhadas em planilhas, documentos ou registros
+O controle de equipamentos e manutenções pode se tornar difícil quando
+as informações ficam espalhadas em planilhas, documentos ou registros
 manuais.
 
-O sistema busca centralizar essas informações em uma única plataforma web.
+O InfraTrack busca centralizar essas informações em uma única plataforma,
+facilitando o acompanhamento da infraestrutura de TI.
 
 ## Objetivo
 
 Desenvolver uma aplicação web que permita ao setor de TI cadastrar e
-acompanhar equipamentos, registrar problemas e manutenções e consultar o
-histórico de cada equipamento.
+acompanhar equipamentos, registrar problemas e manutenções e consultar
+o histórico de cada equipamento.
 
-## Funcionalidades
+## Funcionalidades previstas
 
 - Cadastro de equipamentos
 - Consulta de equipamentos
@@ -36,8 +41,9 @@ histórico de cada equipamento.
 
 - Java
 - Spring Boot
-- React
-- TypeScript
+- HTML
+- CSS
+- JavaScript
 - PostgreSQL
 - MongoDB
 - Git
