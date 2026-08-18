@@ -1,4 +1,4 @@
-# MoTI 
+# moTI 
 
 Sistema web para monitoramento de equipamentos e manutenção da infraestrutura de TI.
 
