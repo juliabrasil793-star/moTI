@@ -4,7 +4,7 @@ Sistema web para monitoramento de equipamentos e manutenção da infraestrutura 
 
 ## Sobre o projeto
 
-O InfraTrack é uma aplicação web desenvolvida para auxiliar o setor de
+O moTI é uma aplicação web desenvolvida para auxiliar o setor de
 Tecnologia da Informação no controle e acompanhamento dos equipamentos
 da instituição.
 
