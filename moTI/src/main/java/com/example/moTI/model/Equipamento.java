@@ -35,8 +35,6 @@ public class Equipamento {
     @Column(nullable = false)
     private StatusEquipamento status = StatusEquipamento.FUNCIONANDO;
 
-    // Campo livre para atributos específicos do tipo (ex: "cor: preto; ppm: 20"),
-    // evita criar uma tabela por tipo de equipamento nessa fase do projeto.
     @Column(columnDefinition = "TEXT")
     private String detalhesEspecificos;
 
@@ -45,7 +43,6 @@ public class Equipamento {
 
     public Equipamento() {}
 
-    // Getters e Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

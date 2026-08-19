@@ -11,9 +11,9 @@ public class Local {
     private Long id;
 
     @Column(nullable = false)
-    private String nome; // ex: "Laboratório 2"
+    private String nome; 
 
-    private String setor; // ex: "Bloco B"
+    private String setor; 
 
     public Local() {}
 
@@ -22,7 +22,6 @@ public class Local {
         this.setor = setor;
     }
 
-    // Getters e Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

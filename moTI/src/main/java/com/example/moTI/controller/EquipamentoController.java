@@ -18,20 +18,18 @@ public class EquipamentoController {
         this.equipamentoRepository = equipamentoRepository;
     }
 
-    // Cadastro
+    // aqui é o cadastro
     @PostMapping
     public ResponseEntity<Equipamento> criar(@RequestBody Equipamento equipamento) {
         Equipamento salvo = equipamentoRepository.save(equipamento);
         return ResponseEntity.status(HttpStatus.CREATED).body(salvo);
     }
 
-    // Lista todos
+    // aqui é onde lista todos eles
     @GetMapping
     public List<Equipamento> listar() {
         return equipamentoRepository.findAll();
     }
-
-    // Detalhe de um equipamento (com histórico de manutenções, via getManutencoes())
     @GetMapping("/{id}")
     public ResponseEntity<Equipamento> buscarPorId(@PathVariable Long id) {
         return equipamentoRepository.findById(id)
@@ -39,7 +37,6 @@ public class EquipamentoController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // Atualização (já deixo pronto para a Semana 3)
     @PutMapping("/{id}")
     public ResponseEntity<Equipamento> atualizar(@PathVariable Long id, @RequestBody Equipamento dados) {
         return equipamentoRepository.findById(id)
@@ -58,7 +55,6 @@ public class EquipamentoController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // Remoção
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletar(@PathVariable Long id) {
         if (!equipamentoRepository.existsById(id)) {

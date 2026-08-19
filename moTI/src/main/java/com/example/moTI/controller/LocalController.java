@@ -16,20 +16,18 @@ public class LocalController {
     @Autowired
     private LocalRepository localRepository;
 
-    // Cadastro
+
     @PostMapping
     public ResponseEntity<Local> criar(@RequestBody Local local) {
         Local salvo = localRepository.save(local);
         return ResponseEntity.status(HttpStatus.CREATED).body(salvo);
     }
 
-    // Lista todos
     @GetMapping
     public List<Local> listar() {
         return localRepository.findAll();
     }
 
-    // Busca um por id
     @GetMapping("/{id}")
     public ResponseEntity<Local> buscarPorId(@PathVariable Long id) {
         return localRepository.findById(id)
@@ -37,7 +35,6 @@ public class LocalController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // Atualização
     @PutMapping("/{id}")
     public ResponseEntity<Local> atualizar(@PathVariable Long id, @RequestBody Local dados) {
         return localRepository.findById(id)
@@ -49,7 +46,6 @@ public class LocalController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // Remoção
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletar(@PathVariable Long id) {
         if (!localRepository.existsById(id)) {
