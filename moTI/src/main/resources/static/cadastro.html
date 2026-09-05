@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>moTI — Novo equipamento</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="fundo-animado">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="logo">
+    <img src="img/Logo_sonora_moderna_preto_e_branco-removebg-preview.png" alt="moTI"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+    <span class="logo-fallback">moTI</span>
+  </div>
+
+  <aside class="menu">
+    <nav>
+      <a href="index.html" class="menu-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="8" y1="6" x2="21" y2="6"></line>
+          <line x1="8" y1="12" x2="21" y2="12"></line>
+          <line x1="8" y1="18" x2="21" y2="18"></line>
+          <line x1="3" y1="6" x2="3.01" y2="6"></line>
+          <line x1="3" y1="12" x2="3.01" y2="12"></line>
+          <line x1="3" y1="18" x2="3.01" y2="18"></line>
+        </svg>
+        <span>Listar</span>
+      </a>
+      <a href="cadastro.html" class="menu-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+        <span>Cadastrar</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="conteudo">
+    <div class="conteudo-centro">
+      <form id="form-equipamento">
+        <h1 class="titulo">Novo <span>equipamento</span></h1>
+
+        <label for="tipo">Tipo</label>
+        <select id="tipo" required>
+          <option value="">Selecione...</option>
+          <option value="COMPUTADOR">Computador</option>
+          <option value="NOTEBOOK">Notebook</option>
+          <option value="IMPRESSORA">Impressora</option>
+          <option value="PROJETOR">Projetor</option>
+          <option value="ROTEADOR">Roteador</option>
+          <option value="SWITCH">Switch</option>
+          <option value="OUTRO">Outro</option>
+        </select>
+
+        <label for="marca">Marca</label>
+        <input type="text" id="marca" placeholder="Ex: Dell">
+
+        <label for="modelo">Modelo</label>
+        <input type="text" id="modelo" placeholder="Ex: OptiPlex 3080">
+
+        <label for="patrimonio">Patrimônio</label>
+        <input type="text" id="patrimonio" placeholder="Ex: PC-034" required>
+
+        <label for="numeroSerie">Número de série</label>
+        <input type="text" id="numeroSerie" placeholder="Ex: ABC123">
+
+        <label for="local">Local</label>
+        <select id="local">
+          <option value="">Sem local definido</option>
+        </select>
+
+        <label for="dataAquisicao">Data de aquisição</label>
+        <input type="date" id="dataAquisicao">
+
+        <label for="status">Status</label>
+        <select id="status">
+          <option value="FUNCIONANDO">Funcionando</option>
+          <option value="EM_MANUTENCAO">Em manutenção</option>
+          <option value="COM_PROBLEMA">Com problema</option>
+          <option value="INATIVO">Inativo</option>
+        </select>
+
+        <label for="detalhesEspecificos">Detalhes específicos</label>
+        <textarea id="detalhesEspecificos" rows="3" placeholder="Ex: 16GB RAM; SSD 480GB"></textarea>
+
+        <button type="submit">Cadastrar equipamento</button>
+        <div id="mensagem" class="mensagem"></div>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

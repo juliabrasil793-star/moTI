@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>moTI — Equipamentos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="fundo-animado">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="logo">
+    <img src="img/Logo_sonora_moderna_preto_e_branco-removebg-preview.png" alt="moTI"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+    <span class="logo-fallback">moTI</span>
+  </div>
+
+  <aside class="menu">
+    <nav>
+      <a href="index.html" class="menu-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="8" y1="6" x2="21" y2="6"></line>
+          <line x1="8" y1="12" x2="21" y2="12"></line>
+          <line x1="8" y1="18" x2="21" y2="18"></line>
+          <line x1="3" y1="6" x2="3.01" y2="6"></line>
+          <line x1="3" y1="12" x2="3.01" y2="12"></line>
+          <line x1="3" y1="18" x2="3.01" y2="18"></line>
+        </svg>
+        <span>Listar</span>
+      </a>
+      <a href="cadastro.html" class="menu-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+        <span>Cadastrar</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="conteudo">
+    <div class="conteudo-full">
+      <h1 class="titulo">Equipamentos <span>&mdash; moTI</span></h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Patrimônio</th>
+            <th>Tipo</th>
+            <th>Marca / Modelo</th>
+            <th>Local</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-equipamentos"></tbody>
+      </table>
+
+      <div id="vazio" class="vazio" style="display:none;">
+        Nenhum equipamento cadastrado ainda.
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -2,7 +2,6 @@ package com.example.moTI.controller;
 
 import com.example.moTI.model.Manutencao;
 import com.example.moTI.repository.ManutencaoRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,8 +12,11 @@ import java.util.List;
 @RequestMapping("/manutencoes")
 public class ManutencaoController {
 
-    @Autowired
-    private ManutencaoRepository manutencaoRepository;
+    private final ManutencaoRepository manutencaoRepository;
+
+    ManutencaoController(ManutencaoRepository manutencaoRepository) {
+        this.manutencaoRepository = manutencaoRepository;
+    }
 
     @PostMapping
     public ResponseEntity<Manutencao> criar(@RequestBody Manutencao manutencao) {

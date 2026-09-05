@@ -2,7 +2,6 @@ package com.example.moTI.controller;
 
 import com.example.moTI.model.Local;
 import com.example.moTI.repository.LocalRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,8 +12,12 @@ import java.util.List;
 @RequestMapping("/locais")
 public class LocalController {
 
-    @Autowired
-    private LocalRepository localRepository;
+    private final LocalRepository localRepository;
+
+
+    LocalController(LocalRepository localRepository) {
+        this.localRepository = localRepository;
+    }
 
 
     @PostMapping
