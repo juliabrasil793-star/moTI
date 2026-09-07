@@ -134,8 +134,8 @@ body {
 }
 
 .logo img {
-  width: 400px;
-  height: 150px;
+  width: 500px;
+  height: 250px;
   margin-left: 30px;
   object-fit: contain;
   object-position: left center;
@@ -305,9 +305,8 @@ th {
   color: var(--text-muted);
   background: rgba(0, 0, 0, 0.15);
 }
-
 td {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   color: var(--text-main);
 }
 
