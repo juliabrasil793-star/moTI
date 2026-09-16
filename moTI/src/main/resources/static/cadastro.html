@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <title>moTI — Novo equipamento</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="img/gear.png">
 </head>
-<body>
-  <div class="fundo-animado">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
 
-  <div class="logo">
-    <img src="img/Logo_sonora_moderna_preto_e_branco-removebg-preview.png" alt="moTI"
-        onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
-    <span class="logo-fallback">moTI</span>
-  </div>
+<body>
+
+  <div class="background"></div>
 
   <aside class="menu">
     <nav>
       <a href="index.html" class="menu-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
           <line x1="8" y1="6" x2="21" y2="6"></line>
           <line x1="8" y1="12" x2="21" y2="12"></line>
           <line x1="8" y1="18" x2="21" y2="18"></line>
@@ -32,12 +26,33 @@
         </svg>
         <span>Listar</span>
       </a>
+
       <a href="cadastro.html" class="menu-item active">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
           <line x1="12" y1="5" x2="12" y2="19"></line>
           <line x1="5" y1="12" x2="19" y2="12"></line>
         </svg>
         <span>Cadastrar</span>
+      </a>
+
+      <a href="manutencao.html" class="menu-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path
+            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+          </path>
+        </svg>
+        <span>Manutenções</span>
+      </a>
+
+      <a href="locais.html" class="menu-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>Locais</span>
       </a>
     </nav>
   </aside>
@@ -91,11 +106,14 @@
         <textarea id="detalhesEspecificos" rows="3" placeholder="Ex: 16GB RAM; SSD 480GB"></textarea>
 
         <button type="submit">Cadastrar equipamento</button>
+
         <div id="mensagem" class="mensagem"></div>
       </form>
     </div>
   </main>
 
   <script src="js/script.js"></script>
+
 </body>
+
 </html>
